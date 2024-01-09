@@ -1,32 +1,36 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "Unleashing Knowledge, Empowering Minds.",
-  "main": "index.js",
-  "scripts": {
-    "format:check": "npx prettier . --check",
-    "format:fix": "npx prettier . --write",
-    "lint:fix": "npx eslint . --fix",
-    "lint:check": "npx eslint .",
-    "prepare": "husky install"
-  },
-  "keywords": [
-    "EducationHub",
-    "EduTutorial",
-    "EduHub"
-  ],
-  "author": "Muhammad Shahzaib Afzal <shahzaibafzalofficial@gmail.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^20.10.7",
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
-    "@typescript-eslint/parser": "^6.18.1",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "husky": "^8.0.3",
-    "nodemon": "^3.0.2",
-    "prettier": "3.1.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
-  }
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "Unleashing Knowledge, Empowering Minds.",
+    "main": "index.js",
+    "scripts": {
+        "format:check": "npx prettier . --check",
+        "format:fix": "npx prettier . --write",
+        "lint:fix": "npx eslint . --fix",
+        "lint:check": "npx eslint .",
+        "prepare": "husky install"
+    },
+    "keywords": [
+        "EducationHub",
+        "EduTutorial",
+        "EduHub"
+    ],
+    "author": "Muhammad Shahzaib Afzal <shahzaibafzalofficial@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.10.7",
+        "@typescript-eslint/eslint-plugin": "^6.18.1",
+        "@typescript-eslint/parser": "^6.18.1",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^15.2.0",
+        "nodemon": "^3.0.2",
+        "prettier": "3.1.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    },
+    "lint-staged": {
+        "*.ts": ["npm run lint:fix","npm run prettier:fix"]
+      }
 }
