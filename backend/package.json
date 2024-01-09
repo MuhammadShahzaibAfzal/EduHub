@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Unleashing Knowledge, Empowering Minds.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node  src/server.js"
+  },
+  "keywords": [
+    "EducationHub",
+    "EduTutorial",
+    "EduHub"
+  ],
+  "author": "Muhammad Shahzaib Afzal <shahzaibafzalofficial@gmail.com>",
+  "license": "ISC"
+}
