@@ -1,5 +1,5 @@
 function login(username: string, password: string): boolean {
-  return true;
+    return username === "John Doe" && password === "secret";
 }
 
-login("John Doe", "secret");
+console.log(login("John Doe", "secret"));
