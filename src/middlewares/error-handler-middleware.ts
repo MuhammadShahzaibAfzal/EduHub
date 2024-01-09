@@ -19,7 +19,7 @@ export const errorHandlerMiddleware = (
         }),
     };
 
-    // TODO :
+    // TODO : Handle Validation Error
 
     if (err instanceof ErrorHandlerService) {
         statusCode = err.status;
