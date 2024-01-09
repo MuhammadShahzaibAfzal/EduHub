@@ -15,5 +15,6 @@ module.exports = {
     // custom rules
     rules: {
         "no-console": "error",
+        "dot-notation": "error",
     },
 };
