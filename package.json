@@ -4,7 +4,7 @@
     "description": "Unleashing Knowledge, Empowering Minds.",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon  src/server.ts",
+        "dev": "nodemon -L  src/server.ts",
         "test": "jest",
         "format:check": "npx prettier . --check",
         "format:fix": "npx prettier . --write",
