@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon -L  src/server.ts",
-        "test": "jest",
+        "test": "jest --verbose --watchAll",
         "format:check": "npx prettier . --check",
         "format:fix": "npx prettier . --write",
         "lint:fix": "npx eslint . --fix",
